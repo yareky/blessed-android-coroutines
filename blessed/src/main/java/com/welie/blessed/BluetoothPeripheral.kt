@@ -61,7 +61,7 @@ class BluetoothPeripheral internal constructor(
     private var cachedName = ""
     private var currentWriteBytes = ByteArray(0)
     private var currentCommand = IDLE
-    private var currentResultCallback: BluetoothPeripheralCallback = BluetoothPeripheralCallback.NULL()
+    private var currentResultCallback: BluetoothPeripheralCallback = BluetoothPeripheralCallback.NULL
     private val notifyingCharacteristics: MutableSet<BluetoothGattCharacteristic> = HashSet()
     private var observeMap: MutableMap<BluetoothGattCharacteristic, (value: ByteArray) -> Unit> = HashMap()
 

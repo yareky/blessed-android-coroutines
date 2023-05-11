@@ -493,7 +493,7 @@ class BluetoothCentralManager(private val context: Context) {
                 Logger.d(TAG, "peripheral with address '%s' not in Bluetooth cache, autoconnecting by scanning", peripheral.address)
                 scannedPeripherals.remove(peripheral.address)
                 unconnectedPeripherals[peripheral.address] = peripheral
-                autoConnectPeripheralByScan(peripheral.address, NULL())
+                autoConnectPeripheralByScan(peripheral.address, NULL)
                 return
             }
 

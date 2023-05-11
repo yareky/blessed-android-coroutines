@@ -181,7 +181,7 @@ internal abstract class BluetoothPeripheralCallback {
     open fun onConnectionUpdated(peripheral: BluetoothPeripheral, interval: Int, latency: Int, timeout: Int, status: GattStatus) {}
 
     /**
-     * NULL class to deal with nullability
+     * NULL object to deal with nullability
      */
-    internal class NULL : BluetoothPeripheralCallback()
+    internal object NULL : BluetoothPeripheralCallback()
 }
